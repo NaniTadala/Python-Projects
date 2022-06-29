@@ -9,13 +9,14 @@ def shuffle_list(mylist):
 
 def players_guess():
     guess = ''
-    while guess not in ['0','1','2']:
-        guess = input("Pick a number: 0, 1, or 2:  ")
-    return int(guess)
+    while guess not in [0,1,2]:
+        guess = int(input("Pick a number: 0, 1, or 2:  "))
+    return guess
 
 def check_guess(mylist,guess):
     if mylist[guess] == 'O':
         print('Correct Guess!')
+        print(mylist)
     else:
         print('Wrong! Better luck next time')
         print(mylist)
