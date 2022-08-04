@@ -34,7 +34,7 @@ while True:
         continue
     
     repeat = input("Click 'Yes' to continue or 'No' to exit\n")
-    if repeat.lower() == "yes":
+    if repeat[0].lower() == "y":
         continue
-    elif repeat.lower() == "no":
+    elif repeat[0].lower() == "n":
         break
